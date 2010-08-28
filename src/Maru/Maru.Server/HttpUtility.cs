@@ -38,7 +38,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public static class HttpUtility {
 

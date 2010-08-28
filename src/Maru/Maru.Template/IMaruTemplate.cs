@@ -2,15 +2,15 @@
 
 using System;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 	
 	
-	public interface IMangoTemplate
+	public interface IMaruTemplate
 	{
-		void Render (IMangoContext context, object the_arg);
+		void Render (IMaruContext context, object the_arg);
 		void RenderToResponse (IHttpResponse response, object the_arg);
 	}
 	

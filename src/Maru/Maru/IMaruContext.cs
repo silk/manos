@@ -1,11 +1,11 @@
 
 using System;
 
-using Mango.Server;
+using Maru.Server;
 
-namespace Mango
+namespace Maru
 {
-	public interface IMangoContext
+	public interface IMaruContext
 	{
 		IHttpTransaction Transaction {
 			get;

@@ -3,7 +3,7 @@ using System;
 using System.Reflection;
 
 
-namespace Mango {
+namespace Maru {
 
 	[AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 	public class TraceAttribute : HttpMethodAttribute {

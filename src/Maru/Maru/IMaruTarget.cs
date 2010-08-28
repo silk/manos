@@ -1,15 +1,15 @@
 
 using System;
 
-namespace Mango
+namespace Maru
 {
-	public interface IMangoTarget
+	public interface IMaruTarget
 	{
-		MangoAction Action {
+		MaruAction Action {
 			get;
 			set;
 		}
 		
-		void Invoke (IMangoContext ctx);
+		void Invoke (IMaruContext ctx);
 	}
 }

@@ -2,10 +2,8 @@
 using System;
 using System.Collections.Specialized;
 
-namespace Mango.Routing
+namespace Maru.Routing
 {
-
-
 	public class StringMatchOperation : IMatchOperation
 	{
 		private string str;

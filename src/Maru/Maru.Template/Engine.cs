@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 
 	public class FooBarTest {
 		

@@ -3,7 +3,7 @@
 using System;
 using System.Text;
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public interface IHttpResponse {
 

@@ -1,6 +1,6 @@
 
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public interface IWriteOperation {
 

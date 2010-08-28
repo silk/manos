@@ -2,13 +2,13 @@
 
 using System;
 
-using Mango.Server;
+using Maru.Server;
 
-namespace Mango {
+namespace Maru {
 
-	public class MangoContext : IMangoContext {
+	public class MaruContext : IMaruContext {
 
-		public MangoContext (IHttpTransaction transaction)
+		public MaruContext (IHttpTransaction transaction)
 		{
 			Transaction = transaction;
 		}

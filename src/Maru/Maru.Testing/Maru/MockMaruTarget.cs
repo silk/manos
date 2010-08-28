@@ -1,23 +1,23 @@
 
 using System;
 
-namespace Mango.Testing
+namespace Maru.Testing
 {
 
 
-	public class MockMangoTarget : IMangoTarget
+	public class MockMaruTarget : IMaruTarget
 	{
-		public MockMangoTarget ()
+		public MockMaruTarget ()
 		{
 		}
 		
-		public void Invoke (IMangoContext ctx)
+		public void Invoke (IMaruContext ctx)
 		{
 			throw new System.NotImplementedException();
 		}
 		
 		
-		public MangoAction Action {
+		public MaruAction Action {
 			get {
 				throw new System.NotImplementedException();
 			}

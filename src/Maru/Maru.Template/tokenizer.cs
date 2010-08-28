@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 
 	public class Token {
 

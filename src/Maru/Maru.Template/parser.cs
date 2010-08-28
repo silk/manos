@@ -6,7 +6,7 @@ using System.Text;
 using System.Collections.Generic;
 
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 
 	public class MingeParser {
 

@@ -2,9 +2,9 @@
 
 using System;
 
-namespace Mango {
+namespace Maru {
 
-	public delegate void MangoAction (IMangoContext context);
+	public delegate void MaruAction (IMaruContext context);
 	
 }
 

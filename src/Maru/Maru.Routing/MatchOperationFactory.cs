@@ -2,10 +2,8 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace Mango.Routing
+namespace Maru.Routing
 {
-
-
 	public static class MatchOperationFactory
 	{
 		// If any of these guys are in there we consider it a regex string

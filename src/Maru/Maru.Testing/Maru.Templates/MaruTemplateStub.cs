@@ -1,14 +1,14 @@
 using System;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
 
-namespace Mango.Templates.Testing
+namespace Maru.Templates.Testing
 {
-	public class MangoTemplateStub : IMangoTemplate
+	public class MaruTemplateStub : IMaruTemplate
 	{
-		public MangoTemplateStub ()
+		public MaruTemplateStub ()
 		{
 		}
 	
@@ -17,7 +17,7 @@ namespace Mango.Templates.Testing
 			private set;
 		}
 		
-		public void Render (IMangoContext context, object the_arg)
+		public void Render (IMaruContext context, object the_arg)
 		{
 			RenderToResponse (context.Response, the_arg);
 		}

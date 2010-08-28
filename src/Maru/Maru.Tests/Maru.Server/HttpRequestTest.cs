@@ -2,10 +2,10 @@
 using System;
 using NUnit.Framework;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
-namespace Mango.Server.Tests
+namespace Maru.Server.Tests
 {
 
 

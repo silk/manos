@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 
 	public class MingeEnvironment {
 

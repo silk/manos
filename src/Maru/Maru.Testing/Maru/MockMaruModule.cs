@@ -1,14 +1,14 @@
 
 using System;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
-namespace Mango.Testing
+namespace Maru.Testing
 {
 
 
-	public class MockMangoModule : MangoModule
+	public class MockMaruModule : MaruModule
 	{
 
 	}

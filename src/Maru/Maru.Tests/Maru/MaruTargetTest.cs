@@ -2,37 +2,37 @@
 using System;
 using NUnit.Framework;
 
-namespace Mango.Tests
+namespace Maru.Tests
 {
 
 
 	[TestFixture()]
-	public class MangoTargetTest
+	public class MaruTargetTest
 	{
 
-		public static void FakeAction (IMangoContext ctx)
+		public static void FakeAction (IMaruContext ctx)
 		{
 		}
 		
 		[Test()]
 		public void TextNullCtor ()
 		{
-			Assert.Throws<ArgumentNullException> (() => new MangoTarget (null));
+			Assert.Throws<ArgumentNullException> (() => new MaruTarget (null));
 		}
 		
 		[Test]
 		public void TestSetAction ()
 		{
-			var t = new MangoTarget (FakeAction);
+			var t = new MaruTarget (FakeAction);
 			
 			Assert.NotNull (t.Action, "not null");
-			Assert.AreEqual (new MangoAction (FakeAction), t.Action, "equals");
+			Assert.AreEqual (new MaruAction (FakeAction), t.Action, "equals");
 		}
 		
 		[Test]
 		public void TestSetActionNull ()
 		{
-			var t = new MangoTarget (FakeAction);
+			var t = new MaruTarget (FakeAction);
 			
 			Assert.Throws<ArgumentNullException> (() => t.Action = null);
 		}

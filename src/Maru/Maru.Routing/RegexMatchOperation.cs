@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 
 
-namespace Mango.Routing {
+namespace Maru.Routing {
 
 	public class RegexMatchOperation : IMatchOperation {
 

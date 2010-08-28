@@ -3,15 +3,15 @@ using System;
 using System.IO;
 using System.Reflection;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
 
-namespace Mango.Tool
+namespace Maru.Tool
 {
 	public class ServerCommand
 	{
-		private MangoApp app;
+		private MaruApp app;
 		
 		private int? port;
 		private string application_assembly;
@@ -68,15 +68,15 @@ namespace Mango.Tool
 			app.HandleTransaction (con);
 		}
 			
-		public MangoApp LoadLibrary (string library)
+		public MaruApp LoadLibrary (string library)
 		{
 			Assembly a = Assembly.LoadFrom (library);
 
 			foreach (Type t in a.GetTypes ()) {
-				if (t.BaseType == typeof (MangoApp)) {
+				if (t.BaseType == typeof (MaruApp)) {
 					if (app != null)
 						throw new Exception ("Library contains multiple apps.");
-					app = (MangoApp) Activator.CreateInstance (t);
+					app = (MaruApp) Activator.CreateInstance (t);
 				}
 			}
 

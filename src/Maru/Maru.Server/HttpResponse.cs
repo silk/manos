@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using Mono.Unix.Native;
 
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public class HttpResponse : IHttpResponse {
 
@@ -133,7 +133,7 @@ namespace Mango.Server {
 		{
 			Headers.ContentLength = 0;
 
-			SetHeader ("Server", String.Concat ("Mango/", HttpServer.ServerVersion));
+			SetHeader ("Server", String.Concat ("Maru/", HttpServer.ServerVersion));
 		}
 
 		private static string GetStatusDescription (int code)

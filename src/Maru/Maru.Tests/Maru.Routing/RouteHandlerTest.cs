@@ -2,11 +2,11 @@
 using System;
 using NUnit.Framework;
 
-using Mango.Routing;
-using Mango.Testing;
-using Mango.Server.Testing;
+using Maru.Routing;
+using Maru.Testing;
+using Maru.Server.Testing;
 
-namespace Mango.Routing.Tests
+namespace Maru.Routing.Tests
 {
 
 
@@ -14,14 +14,14 @@ namespace Mango.Routing.Tests
 	public class RouteHandlerTest
 	{
 
-		private static void FakeAction (IMangoContext ctx)
+		private static void FakeAction (IMaruContext ctx)
 		{
 		}
 		
 		[Test()]
 		public void TestStrMatch ()
 		{
-			var target = new MockMangoTarget ();
+			var target = new MockMaruTarget ();
 			var rh = new RouteHandler ("^foo", "GET", target);
 			var request = new MockHttpRequest ("GET", "foo");
 			
@@ -34,7 +34,7 @@ namespace Mango.Routing.Tests
 		[Test()]
 		public void TestStrMatchDeep ()
 		{
-			var target = new MockMangoTarget ();
+			var target = new MockMaruTarget ();
 			var rh = new RouteHandler ("foo/", "GET") {
 				new RouteHandler ("bar", "GET", target),
 			};
@@ -59,7 +59,7 @@ namespace Mango.Routing.Tests
 			// regexes.
 			//
 			
-			var target = new MockMangoTarget ();
+			var target = new MockMaruTarget ();
 			var rh = new RouteHandler ("^foo", "GET", target);
 			var request = new MockHttpRequest ("GET", "foo");
 
@@ -75,7 +75,7 @@ namespace Mango.Routing.Tests
 		[Test]
 		public void TestSetPatternsNull ()
 		{
-			var target = new MockMangoTarget ();
+			var target = new MockMaruTarget ();
 			var rh = new RouteHandler ("^foo", "GET", target);
 			var request = new MockHttpRequest ("GET", "foo");
 
@@ -106,7 +106,7 @@ namespace Mango.Routing.Tests
 		[Test]
 		public void UriParamsTest ()
 		{
-			var rh = new RouteHandler ("(?<name>.+)", "GET", new MangoTarget (FakeAction));
+			var rh = new RouteHandler ("(?<name>.+)", "GET", new MaruTarget (FakeAction));
 			var request = new MockHttpRequest ("GET", "hello");
 			
 			Assert.NotNull (rh.Find (request), "target");
@@ -120,7 +120,7 @@ namespace Mango.Routing.Tests
 		public void UriParamsTestDeep ()
 		{
 			var rh = new RouteHandler ("(?<animal>.+)/", "GET") {
-				new RouteHandler ("(?<name>.+)", "GET", new MangoTarget (FakeAction)),	                                                         
+				new RouteHandler ("(?<name>.+)", "GET", new MaruTarget (FakeAction)),	                                                         
 			};
 			var request = new MockHttpRequest ("GET", "dog/roxy");
 			
@@ -135,7 +135,7 @@ namespace Mango.Routing.Tests
 		[Test]
 		public void TestNoChildrenOfTarget ()
 		{
-			var rh = new RouteHandler ("foo", "GET", new MangoTarget (FakeAction));
+			var rh = new RouteHandler ("foo", "GET", new MaruTarget (FakeAction));
 			
 			Assert.Throws<InvalidOperationException> (() => rh.Children.Add (new RouteHandler ("foo", "POST")));
 		}

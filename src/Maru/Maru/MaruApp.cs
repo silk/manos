@@ -2,16 +2,41 @@
 
 
 using System;
+using System.IO;
+using System.Reflection;
 
-using Mango.Server;
-using Mango.Routing;
+using Maru.Server;
+using Maru.Routing;
+using Maru.Templates;
 
-namespace Mango {
+namespace Maru {
 
-	public class MangoApp : MangoModule {
+	public class MaruApp : MaruModule {
 
-		public MangoApp ()
+		public MaruApp ()
 		{
+		}
+		
+		protected override void OnStart ()
+		{
+			LoadTemplates ();
+		}
+		
+		private void LoadTemplates ()
+		{
+			TemplateFactory.Clear ();
+			
+			if (!File.Exists ("Templates.dll"))
+				return;
+				
+			/*
+			Assembly templates = Assembly.LoadFile ("Templates.dll");
+			
+			foreach (Type t in templates) {
+				// if (typeof (IMaruTemplate).IsAssignableFrom (t))
+					// TemplateFactory.Register (
+			}
+			*/
 		}
 	}
 }

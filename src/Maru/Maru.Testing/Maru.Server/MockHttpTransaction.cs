@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Mango.Server.Testing
+namespace Maru.Server.Testing
 {
 
 

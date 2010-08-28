@@ -1,14 +1,12 @@
 
 using System;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 using System.Collections.Specialized;
 
-namespace Mango.Server.Testing
+namespace Maru.Server.Testing
 {
-
-
 	public class MockHttpRequest : IHttpRequest
 	{
 		private NameValueCollection uri_data;

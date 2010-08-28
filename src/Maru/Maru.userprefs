@@ -1,55 +1,84 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 2.7" ctype="Workspace" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Mango.Template/codegen.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Maru.Tests/Maru/MaruModuleTest.cs" ctype="Workbench">
     <Files>
-      <File FileName="Mango.Template/library.cs" Line="1" Column="1" />
       <File FileName="Assembly/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="Mango.Tests/Mango.Template/CodegenTest.cs" Line="55" Column="1" />
-      <File FileName="Mango.Tests/Mango/MangoModuleTest.cs" Line="1" Column="1" />
-      <File FileName="Mango.Template/codegen.cs" Line="1" Column="1" />
+      <File FileName="Maru/DeleteAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/GetAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/IMaruContext.cs" Line="1" Column="1" />
+      <File FileName="Maru/IMaruTarget.cs" Line="2" Column="14" />
+      <File FileName="Maru/MaruAction.cs" Line="1" Column="1" />
+      <File FileName="Maru/MaruApp.cs" Line="36" Column="25" />
+      <File FileName="Maru/MaruContext.cs" Line="1" Column="1" />
+      <File FileName="Maru/MaruModule.cs" Line="270" Column="28" />
+      <File FileName="Maru/MaruTarget.cs" Line="4" Column="15" />
+      <File FileName="Maru.Routing/IMatchOperation.cs" Line="1" Column="1" />
+      <File FileName="Maru.Routing/MatchOperationFactory.cs" Line="1" Column="1" />
+      <File FileName="Maru.Routing/RegexMatchOperation.cs" Line="1" Column="1" />
+      <File FileName="Maru.Routing/StringMatchOperation.cs" Line="1" Column="1" />
+      <File FileName="Maru.Routing/RouteHandler.cs" Line="32" Column="73" />
+      <File FileName="Maru.Routing/NopMatchOperation.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpException.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpHeaders.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpRequest.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpResponse.cs" Line="136" Column="45" />
+      <File FileName="Maru.Template/MaruTemplate.cs" Line="9" Column="28" />
+      <File FileName="Maru.Template/codegen.cs" Line="523" Column="7" />
+      <File FileName="Maru.Template/Engine.cs" Line="1" Column="1" />
+      <File FileName="Maru.Template/environment.cs" Line="1" Column="1" />
+      <File FileName="Maru.Template/IMaruTemplate.cs" Line="6" Column="11" />
+      <File FileName="Maru.Template/library.cs" Line="1" Column="1" />
+      <File FileName="Maru.Template/parser.cs" Line="1" Column="1" />
+      <File FileName="Maru.Template/TemplateFactory.cs" Line="1" Column="1" />
+      <File FileName="Maru.Template/tokenizer.cs" Line="1" Column="1" />
+      <File FileName="Maru.Testing/Maru/MockMaruModule.cs" Line="1" Column="1" />
+      <File FileName="Maru.Testing/Maru/MockMaruTarget.cs" Line="4" Column="15" />
+      <File FileName="Maru.Testing/Maru.Server/MockHttpRequest.cs" Line="5" Column="11" />
+      <File FileName="Maru.Testing/Maru.Templates/MaruTemplateStub.cs" Line="4" Column="11" />
+      <File FileName="Maru/HttpMethodAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/HeadAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/HttpMethods.cs" Line="5" Column="15" />
+      <File FileName="Maru/IgnoreAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/OptionsAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/PutAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/PostAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru/TraceAttribute.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpTransaction.cs" Line="28" Column="31" />
+      <File FileName="Maru.Server/IWriteOperation.cs" Line="3" Column="15" />
+      <File FileName="Maru.Server/UriParser.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/WriteBytesOperation.cs" Line="6" Column="15" />
+      <File FileName="Maru.Server/WriteFileOperation.cs" Line="6" Column="15" />
+      <File FileName="Maru.Server/IOStream.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/IOLoop.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/IHttpTransaction.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/IHttpResponse.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/IHttpRequest.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpUtility.cs" Line="1" Column="1" />
+      <File FileName="Maru.Server/HttpServer.cs" Line="1" Column="1" />
+      <File FileName="maru-tool/Driver.cs" Line="105" Column="2" />
+      <File FileName="maru-tool/BuildCommand.cs" Line="11" Column="15" />
+      <File FileName="maru-tool/ServerCommand.cs" Line="74" Column="1" />
+      <File FileName="maru-tool/Options.cs" Line="1" Column="1" />
+      <File FileName="maru-tool/InitCommand.cs" Line="5" Column="15" />
+      <File FileName="maru-tool/Environment.cs" Line="6" Column="2" />
+      <File FileName="maru-server/maru.cs" Line="43" Column="1" />
+      <File FileName="Maru.Tests/Maru/MaruModuleTest.cs" Line="285" Column="78" />
+      <File FileName="Maru.Tests/Maru/MaruTargetTest.cs" Line="35" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Mango" expanded="True">
-            <Node name="Assembly" expanded="True" />
-            <Node name="Mango.Template" expanded="True" />
-            <Node name="Mango.Testing" expanded="True" />
-          </Node>
-          <Node name="Mango.Tests" expanded="True">
-            <Node name="Mango" expanded="True" />
-            <Node name="Mango.Template" expanded="True" />
-          </Node>
-          <Node name="mango-server" expanded="True" />
+          <Node name="Maru.Tests" selected="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True">
-          <Node name="Mango" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-            <Node name="Mango" expanded="True">
-              <Node name="Templates" expanded="True" />
-              <Node name="Testing" expanded="True" />
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True">
-          <Node name="Mango.Tests" expanded="True">
-            <Node name="Mango" expanded="True">
-              <Node name="Server" expanded="True" />
-              <Node name="Templates" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="CodegenTest" expanded="True" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

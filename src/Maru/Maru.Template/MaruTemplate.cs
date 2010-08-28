@@ -1,14 +1,14 @@
 using System;
 
-using Mango;
-using Mango.Server;
+using Maru;
+using Maru.Server;
 
 
-namespace Mango.Templates
+namespace Maru.Templates
 {
-	public abstract class MangoTemplate
+	public abstract class MaruTemplate
 	{
-		public void Render (IMangoContext context, object the_arg)
+		public void Render (IMaruContext context, object the_arg)
 		{
 			RenderToResponse (context.Response, the_arg);
 		}

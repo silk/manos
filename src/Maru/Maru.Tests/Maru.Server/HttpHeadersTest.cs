@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 
 
-namespace Mango.Server.Tests
+namespace Maru.Server.Tests
 {
 	[TestFixture()]
 	public class HttpHeadersTest

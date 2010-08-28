@@ -9,9 +9,9 @@ using System.Collections.Generic;
 
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-using Mango.Server;
+using Maru.Server;
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 
 	public enum CompareOperator {
 		Invalid,
@@ -460,7 +460,6 @@ namespace Mango.Templates {
 
 		public Application (MingeCompiler compiler, string name, string path)
 		{
-			Console.WriteLine ("created application:  {0}  {1}", name, path);
 			Compiler = compiler;
 			Name = name;
 			Path = path;
@@ -500,6 +499,11 @@ namespace Mango.Templates {
 			private set;
 		}
 
+		public MethodDefinition RegisterTypeMethod {
+			get;
+			private set;
+		}
+		
 		public void Save ()
 		{
 			Console.WriteLine ("saving:  {0}  PATH:  {1}", Assembly, Path);
@@ -516,6 +520,8 @@ namespace Mango.Templates {
 
 			Assembly.MainModule.Types.Add (page);
 
+			// RegisterType (path, page);
+			
 			return new Page (this, Assembly, page, path);
 		}
 

@@ -3,7 +3,7 @@
 using System;
 
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public class WriteFileOperation : IWriteOperation {
 

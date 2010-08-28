@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public class WriteBytesOperation : IWriteOperation {
 

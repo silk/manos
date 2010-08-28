@@ -2,10 +2,10 @@
 using System;
 using NUnit.Framework;
 
-using Mango.Routing;
+using Maru.Routing;
 using System.Collections.Specialized;
 
-namespace Mango.Routing.Tests
+namespace Maru.Routing.Tests
 {
 
 

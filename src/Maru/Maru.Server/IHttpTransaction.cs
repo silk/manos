@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Mango.Server {
+namespace Maru.Server {
 
 	public interface IHttpTransaction {
 

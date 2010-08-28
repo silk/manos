@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2548B25A-2E1F-4E21-BC43-7E39B1F6F23F}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Mango</RootNamespace>
-    <AssemblyName>Mango</AssemblyName>
+    <RootNamespace>Maru</RootNamespace>
+    <AssemblyName>Maru</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -42,66 +42,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mango\DeleteAttribute.cs" />
-    <Compile Include="Mango\GetAttribute.cs" />
-    <Compile Include="Mango\HeadAttribute.cs" />
-    <Compile Include="Mango\HttpMethodAttribute.cs" />
-    <Compile Include="Mango\IgnoreAttribute.cs" />
-    <Compile Include="Mango\MangoAction.cs" />
-    <Compile Include="Mango\MangoApp.cs" />
-    <Compile Include="Mango\MangoContext.cs" />
-    <Compile Include="Mango\MangoModule.cs" />
-    <Compile Include="Mango\OptionsAttribute.cs" />
-    <Compile Include="Mango\PostAttribute.cs" />
-    <Compile Include="Mango\PutAttribute.cs" />
-    <Compile Include="Mango\TraceAttribute.cs" />
-    <Compile Include="Mango.Routing\RouteHandler.cs" />
-    <Compile Include="Mango.Server\HttpException.cs" />
-    <Compile Include="Mango.Server\HttpHeaders.cs" />
-    <Compile Include="Mango.Server\HttpRequest.cs" />
-    <Compile Include="Mango.Server\HttpResponse.cs" />
-    <Compile Include="Mango.Server\HttpServer.cs" />
-    <Compile Include="Mango.Server\HttpTransaction.cs" />
-    <Compile Include="Mango.Server\HttpUtility.cs" />
-    <Compile Include="Mango.Server\IHttpRequest.cs" />
-    <Compile Include="Mango.Server\IHttpResponse.cs" />
-    <Compile Include="Mango.Server\IHttpTransaction.cs" />
-    <Compile Include="Mango.Server\IOLoop.cs" />
-    <Compile Include="Mango.Server\IOStream.cs" />
-    <Compile Include="Mango.Server\UriParser.cs" />
-    <Compile Include="Mango.Template\codegen.cs" />
-    <Compile Include="Mango.Template\environment.cs" />
-    <Compile Include="Mango.Template\library.cs" />
-    <Compile Include="Mango.Template\parser.cs" />
-    <Compile Include="Mango.Template\tokenizer.cs" />
-    <Compile Include="Mango\IMangoContext.cs" />
-    <Compile Include="Mango.Testing\MockMangoModule.cs" />
-    <Compile Include="Mango.Testing\Server\MockHttpTransaction.cs" />
-    <Compile Include="Mango.Testing\Server\MockHttpRequest.cs" />
-    <Compile Include="Mango\MangoTarget.cs" />
-    <Compile Include="Mango\IMangoTarget.cs" />
-    <Compile Include="Mango.Testing\MockMangoTarget.cs" />
-    <Compile Include="Mango.Server\WriteBytesOperation.cs" />
-    <Compile Include="Mango.Server\WriteFileOperation.cs" />
-    <Compile Include="Mango.Server\IWriteOperation.cs" />
-    <Compile Include="Mango.Routing\IMatchOperation.cs" />
-    <Compile Include="Mango.Routing\RegexMatchOperation.cs" />
-    <Compile Include="Mango.Routing\MatchOperationFactory.cs" />
-    <Compile Include="Mango.Routing\StringMatchOperation.cs" />
-    <Compile Include="Mango.Routing\NopMatchOperation.cs" />
-    <Compile Include="Mango\HttpMethods.cs" />
-    <Compile Include="Mango.Template\Engine.cs" />
+    <Compile Include="Maru\DeleteAttribute.cs" />
+    <Compile Include="Maru\GetAttribute.cs" />
+    <Compile Include="Maru\HeadAttribute.cs" />
+    <Compile Include="Maru\HttpMethodAttribute.cs" />
+    <Compile Include="Maru\IgnoreAttribute.cs" />
+    <Compile Include="Maru\MaruAction.cs" />
+    <Compile Include="Maru\MaruApp.cs" />
+    <Compile Include="Maru\MaruContext.cs" />
+    <Compile Include="Maru\MaruModule.cs" />
+    <Compile Include="Maru\OptionsAttribute.cs" />
+    <Compile Include="Maru\PostAttribute.cs" />
+    <Compile Include="Maru\PutAttribute.cs" />
+    <Compile Include="Maru\TraceAttribute.cs" />
+    <Compile Include="Maru.Routing\RouteHandler.cs" />
+    <Compile Include="Maru.Server\HttpException.cs" />
+    <Compile Include="Maru.Server\HttpHeaders.cs" />
+    <Compile Include="Maru.Server\HttpRequest.cs" />
+    <Compile Include="Maru.Server\HttpResponse.cs" />
+    <Compile Include="Maru.Server\HttpServer.cs" />
+    <Compile Include="Maru.Server\HttpTransaction.cs" />
+    <Compile Include="Maru.Server\HttpUtility.cs" />
+    <Compile Include="Maru.Server\IHttpRequest.cs" />
+    <Compile Include="Maru.Server\IHttpResponse.cs" />
+    <Compile Include="Maru.Server\IHttpTransaction.cs" />
+    <Compile Include="Maru.Server\IOLoop.cs" />
+    <Compile Include="Maru.Server\IOStream.cs" />
+    <Compile Include="Maru.Server\UriParser.cs" />
+    <Compile Include="Maru.Template\codegen.cs" />
+    <Compile Include="Maru.Template\environment.cs" />
+    <Compile Include="Maru.Template\library.cs" />
+    <Compile Include="Maru.Template\parser.cs" />
+    <Compile Include="Maru.Template\tokenizer.cs" />
+    <Compile Include="Maru\IMaruContext.cs" />
+    <Compile Include="Maru.Testing\Maru\MockMaruModule.cs" />
+    <Compile Include="Maru.Testing\Maru.Server\MockHttpTransaction.cs" />
+    <Compile Include="Maru.Testing\Maru.Server\MockHttpRequest.cs" />
+    <Compile Include="Maru\MaruTarget.cs" />
+    <Compile Include="Maru\IMaruTarget.cs" />
+    <Compile Include="Maru.Testing\Maru\MockMaruTarget.cs" />
+    <Compile Include="Maru.Server\WriteBytesOperation.cs" />
+    <Compile Include="Maru.Server\WriteFileOperation.cs" />
+    <Compile Include="Maru.Server\IWriteOperation.cs" />
+    <Compile Include="Maru.Routing\IMatchOperation.cs" />
+    <Compile Include="Maru.Routing\RegexMatchOperation.cs" />
+    <Compile Include="Maru.Routing\MatchOperationFactory.cs" />
+    <Compile Include="Maru.Routing\StringMatchOperation.cs" />
+    <Compile Include="Maru.Routing\NopMatchOperation.cs" />
+    <Compile Include="Maru\HttpMethods.cs" />
+    <Compile Include="Maru.Template\Engine.cs" />
     <Compile Include="Assembly\AssemblyInfo.cs" />
-    <Compile Include="Mango.Template\MangoTemplate.cs" />
-    <Compile Include="Mango.Template\IMangoTemplate.cs" />
-    <Compile Include="Mango.Template\TemplateFactory.cs" />
-    <Compile Include="Mango.Testing\Templates\MangoTemplateStub.cs" />
+    <Compile Include="Maru.Template\MaruTemplate.cs" />
+    <Compile Include="Maru.Template\IMaruTemplate.cs" />
+    <Compile Include="Maru.Testing\Maru.Templates\MaruTemplateStub.cs" />
+    <Compile Include="Maru.Template\TemplateFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Mango.Testing\" />
-    <Folder Include="Mango.Testing\Server\" />
+    <Folder Include="Maru.Testing\" />
+    <Folder Include="Maru.Testing\Server\" />
     <Folder Include="Assembly\" />
-    <Folder Include="Mango.Testing\Templates\" />
+    <Folder Include="Maru.Testing\Templates\" />
   </ItemGroup>
 </Project>

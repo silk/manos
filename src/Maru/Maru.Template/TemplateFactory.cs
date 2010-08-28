@@ -10,15 +10,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-namespace Mango.Templates {
+namespace Maru.Templates {
 	
 	public static class TemplateFactory {
 		
-		private static Dictionary<string,IMangoTemplate> templates = new Dictionary<string, IMangoTemplate> ();
+		private static Dictionary<string,IMaruTemplate> templates = new Dictionary<string, IMaruTemplate> ();
 		
-		public static IMangoTemplate Get (string name)
+		public static IMaruTemplate Get (string name)
 		{
-			IMangoTemplate res = null;
+			IMaruTemplate res = null;
 			
 			if (!TryGet (name, out res))
 				return null;
@@ -26,7 +26,7 @@ namespace Mango.Templates {
 			return res;
 		}
 		
-		public static bool TryGet (string name, out IMangoTemplate template)
+		public static bool TryGet (string name, out IMaruTemplate template)
 		{
 			if (name == null)
 				throw new ArgumentNullException ("name");
@@ -34,7 +34,7 @@ namespace Mango.Templates {
 			return templates.TryGetValue (name, out template);
 		}
 		
-		public static void Register (string name, IMangoTemplate template)
+		public static void Register (string name, IMaruTemplate template)
 		{
 			if (name == null)
 				throw new ArgumentNullException ("name");
