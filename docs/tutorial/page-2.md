@@ -78,22 +78,22 @@ can either be a nested class or you can create a LinkData.cs file and stick it i
 
     public class LinkData {
 
-	public string Link;
-	public int Clicks;
+        public string Link;
+        public int Clicks;
 
-	public LinkData (string link)
-	{
-		Link = link;
-	}
+        public LinkData (string link)
+        {
+            Link = link;
+        }
     }
 
 Finally, we need to create a hashing function for generating unique ids based on our URLs.
 
     private static string GenerateHash (string str, int length)
     {
-	byte [] data = Encoding.Default.GetBytes (str);
+        byte [] data = Encoding.Default.GetBytes (str);
 
-	SHA1 sha = new SHA1CryptoServiceProvider (); 
+        SHA1 sha = new SHA1CryptoServiceProvider (); 
 	data = sha.ComputeHash (data);
 
 	string base64 = Convert.ToBase64String (data);
@@ -101,13 +101,13 @@ Finally, we need to create a hashing function for generating unique ids based on
         int i = 0;
 	StringBuilder result = new StringBuilder ();
 	while (result.Length < length) {
-		if (Char.IsLetterOrDigit (base64 [i]))
-			result.Append (base64 [i]);
-		++i;
-		if (i >= base64.Length)
-			return null;
-	}
-	return result.ToString ();
+	    if (Char.IsLetterOrDigit (base64 [i]))
+	        result.Append (base64 [i]);
+            ++i;
+            if (i >= base64.Length)
+                return null;
+        }
+        return result.ToString ();
     }
 
 
@@ -160,19 +160,19 @@ System.Threading.Interlocked.Increment method.
     [Route ("/r/{id}")]
     public void Redirector (Shorty app, IManosContext ctx, string id)
     {
-	LinkData info = Cache [id] as LinkData;
+        LinkData info = Cache [id] as LinkData;
 
-	if (info == null) {
-		ctx.Response.StatusCode = 404;
-		return;
-	}
+        if (info == null) {
+            ctx.Response.StatusCode = 404;
+            return;
+        }
 
-	//
-	// Because multiple http transactions could be occuring at the
-	// same time, we need to make sure this shared data is incremented
-	// properly
-	//
-	Interlocked.Increment (ref info.Clicks);
+        //
+        // Because multiple http transactions could be occuring at the
+        // same time, we need to make sure this shared data is incremented
+        // properly
+        //
+        Interlocked.Increment (ref info.Clicks);
 
         ctx.Response.Redirect (info.Link);
     }
